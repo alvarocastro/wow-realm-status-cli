@@ -9,7 +9,7 @@ Simple console utility to check the status and info of World of Warcraft realms.
 ## Install
 
 ```bash
-npm install wow-realm-status-cli
+npm install -g wow-realm-status-cli
 ```
 
 ## Usage
