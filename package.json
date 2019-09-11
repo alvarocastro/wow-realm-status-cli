@@ -29,10 +29,10 @@
   },
   "homepage": "https://github.com/alvarocastro/wow-realm-status-cli#readme",
   "dependencies": {
-    "placeholdify": "^0.0.1",
-    "wow-realm-status": "^0.0.1",
     "commander": "^3.0.1",
-    "ora": "^3.4.0"
+    "ora": "^3.4.0",
+    "placeholdify": "^1.0.0",
+    "wow-realm-status": "^1.0.1"
   },
   "devDependencies": {
     "xo": "^0.24.0"
