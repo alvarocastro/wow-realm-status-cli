@@ -1,0 +1,40 @@
+{
+  "name": "wow-realm-status-cli",
+  "version": "0.0.1",
+  "description": "Console utility to fetch info about the World of Warcraft realms",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo"
+  },
+  "bin": {
+    "wow-realm-status": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarocastro/wow-realm-status-cli.git"
+  },
+  "keywords": [
+    "wow",
+    "world of warcraft",
+    "realms",
+    "warcraft",
+    "blizzard",
+    "battle.net",
+    "cli"
+  ],
+  "author": "Alvaro Castro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvarocastro/wow-realm-status-cli/issues"
+  },
+  "homepage": "https://github.com/alvarocastro/wow-realm-status-cli#readme",
+  "dependencies": {
+    "placeholdify": "^0.0.1",
+    "wow-realm-status": "^0.0.1",
+    "commander": "^3.0.1",
+    "ora": "^3.4.0"
+  },
+  "devDependencies": {
+    "xo": "^0.24.0"
+  }
+}
