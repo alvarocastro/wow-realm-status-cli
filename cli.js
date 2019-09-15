@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
 const program = require('commander');
 const ora = require('ora');
 const {fetchRealm} = require('wow-realm-status');
+const {version} = require('./package.json');
 const {
 	normalizeRealm,
 	filterFields,
@@ -11,10 +11,8 @@ const {
 	outputAsHuman
 } = require('.');
 
-const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-
 program
-	.version(pkg.version, '-v, --version', 'Output the current version')
+	.version(version, '-v, --version', 'Output the current version')
 	.option('-j, --json', 'Format output as JSON', false)
 	.option('-s, --simple', 'Hide spinner', false)
 	.option('-f, --fields <name,...>', 'Filter fields', '')
