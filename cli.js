@@ -27,7 +27,7 @@ program
 
 		try {
 			let data = await fetchRealm(region, realm, program.classic);
-			
+
 			if (!data) {
 				throw new Error('That realm doesn\'t exist');
 			}
