@@ -15,7 +15,7 @@ program
 	.version(version, '-v, --version', 'Output the current version')
 	.option('-j, --json', 'Format output as JSON', false)
 	.option('-s, --simple', 'Hide spinner', false)
-	.option('-f, --fields <name,...>', 'Filter fields', '')
+	.option('-f, --fields <name,…>', 'Filter fields', '')
 	.option('-c, --classic', 'Use for classic realms', false)
 	.arguments('<region> <realm>')
 	.action(async (region, realm) => {
@@ -29,7 +29,7 @@ program
 			let data = await fetchRealm(region, realm, program.classic);
 
 			if (!data) {
-				throw new Error('That realm doesn\'t exist');
+				throw new Error('That realm doesn’t exist');
 			}
 
 			data = normalizeRealm(data);
