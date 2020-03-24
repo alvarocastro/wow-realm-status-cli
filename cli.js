@@ -50,7 +50,11 @@ program
 			}
 		} catch (error) {
 			spinner.stop();
-			console.error(`DIE INSECT! ${error.message}!`);
+			if (program.json) {
+				console.error(JSON.stringify({error: error.message}));
+			} else {
+				console.error(`DIE INSECT! ${error.message}!`);
+			}
 		}
 	});
 
