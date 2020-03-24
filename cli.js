@@ -27,6 +27,11 @@ program
 
 		try {
 			let data = await fetchRealm(region, realm, program.classic);
+
+			if (!data) {
+				throw new Error('That realm doesn\'t exist');
+			}
+
 			data = normalizeRealm(data);
 
 			const fields = program.fields.split(',');
@@ -45,7 +50,11 @@ program
 			}
 		} catch (error) {
 			spinner.stop();
-			console.error(`DIE INSECT! ${error.message}!`);
+			if (program.json) {
+				console.error(JSON.stringify({error: error.message}));
+			} else {
+				console.error(`DIE INSECT! ${error.message}!`);
+			}
 		}
 	});
 
