@@ -1,6 +1,6 @@
 {
   "name": "wow-realm-status-cli",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Console utility to fetch info about the World of Warcraft realms",
   "main": "index.js",
   "scripts": {
