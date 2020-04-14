@@ -34,8 +34,8 @@
   "dependencies": {
     "commander": "^5.0.0",
     "ora": "^4.0.0",
-    "placeholdify": "^1.0.0",
-    "wow-realm-status": "^1.0.1"
+    "placeholdify": "^1.0.2",
+    "wow-realm-status": "^1.0.5"
   },
   "devDependencies": {
     "xo": "0.29.1"
