@@ -12,10 +12,13 @@ const normalizeRealm = function (data) {
 };
 
 const filterFields = function (data, fields = []) {
-	return fields.reduce((out, field) => {
+	const out = {};
+
+	fields.forEach(field => {
 		out[field] = data[field];
-		return out;
-	}, {});
+	});
+
+	return out;
 };
 
 const outputAsJson = function (data) {
