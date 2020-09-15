@@ -1,10 +1,15 @@
 # wow-realm-status-cli
-[![NPM](https://img.shields.io/npm/v/wow-realm-status-cli.svg)](https://www.npmjs.com/package/wow-realm-status-cli) [![Build Status](https://travis-ci.com/alvarocastro/wow-realm-status-cli.svg?branch=master)](https://travis-ci.com/alvarocastro/wow-realm-status-cli) [![codebeat badge](https://codebeat.co/badges/2b41ed85-8f63-43bc-85f8-035b4751b8f9)](https://codebeat.co/projects/github-com-alvarocastro-wow-realm-status-cli-master) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
+[![NPM](https://img.shields.io/npm/v/wow-realm-status-cli.svg)](https://www.npmjs.com/package/wow-realm-status-cli)
+[![Build Status](https://travis-ci.com/alvarocastro/wow-realm-status-cli.svg?branch=master)](https://travis-ci.com/alvarocastro/wow-realm-status-cli)
+[![Maintainability](https://api.codeclimate.com/v1/badges/62a11c0186fd767f6f7f/maintainability)](https://codeclimate.com/github/alvarocastro/wow-realm-status-cli/maintainability)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 Simple console utility to check the status and info of World of Warcraft realms.
 
 - [Install](#install)
 - [Usage](#usage)
+- [Contributing](#contributing)
+- [Support](#support)
 - [Related](#related)
 
 ## Install
@@ -84,6 +89,14 @@ Displays the current installed version of this utility.
 ##### -h, --help
 
 Displays the help.
+
+## Contributing
+
+Contributions are always welcome! Please run `npm test` before hand to ensure everything is ok.
+
+## Support
+
+If you use this package please consider starring it :)
 
 ## Related
 
