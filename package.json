@@ -35,6 +35,6 @@
     "wow-realm-status": "^1.0.5"
   },
   "devDependencies": {
-    "xo": "0.29.1"
+    "xo": "0.33.1"
   }
 }
