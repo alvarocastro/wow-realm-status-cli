@@ -30,7 +30,7 @@
   "homepage": "https://github.com/alvarocastro/wow-realm-status-cli#readme",
   "dependencies": {
     "commander": "^5.0.0",
-    "ora": "^4.0.0",
+    "ora": "^5.1.0",
     "placeholdify": "^1.0.2",
     "wow-realm-status": "^1.0.5"
   },
