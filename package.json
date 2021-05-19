@@ -32,7 +32,7 @@
     "commander": "^6.1.0",
     "ora": "^5.1.0",
     "placeholdify": "^1.0.2",
-    "wow-realm-status": "^1.0.5"
+    "wow-realm-status": "^2.0.0"
   },
   "devDependencies": {
     "xo": "0.33.1"

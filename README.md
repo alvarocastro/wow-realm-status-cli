@@ -1,6 +1,5 @@
 # wow-realm-status-cli
 [![NPM](https://img.shields.io/npm/v/wow-realm-status-cli.svg)](https://www.npmjs.com/package/wow-realm-status-cli)
-[![Build Status](https://travis-ci.com/alvarocastro/wow-realm-status-cli.svg?branch=master)](https://travis-ci.com/alvarocastro/wow-realm-status-cli)
 [![Maintainability](https://api.codeclimate.com/v1/badges/62a11c0186fd767f6f7f/maintainability)](https://codeclimate.com/github/alvarocastro/wow-realm-status-cli/maintainability)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
@@ -52,6 +51,20 @@ $ wow-realm-status us kirtonos -c
 Name: Kirtonos
 Status: online
 Population: medium
+Type: pvp
+Locale: en-US
+Timezone: EDT
+```
+
+##### -bc, --burningcrusade
+
+Used to specify if it is a Burning Crusade classic realm, to prevent name clashing.
+
+```bash
+$ wow-realm-status us earthfury -bc
+Name: Earthfury
+Status: online
+Population: high
 Type: pvp
 Locale: en-US
 Timezone: EDT

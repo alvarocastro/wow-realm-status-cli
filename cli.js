@@ -17,6 +17,7 @@ program
 	.option('-s, --simple', 'Hide spinner', false)
 	.option('-f, --fields <name,…>', 'Filter fields', '')
 	.option('-c, --classic', 'Use for classic realms', false)
+	.option('-bc, --burningcrusade', 'Use for Burning Crusade realms', false)
 	.arguments('<region> <realm>')
 	.action(async (region, realm) => {
 		let spinner;
@@ -26,7 +27,18 @@ program
 		}
 
 		try {
-			let data = await fetchRealm(region, realm, program.classic);
+			if (program.classic && program.burningcrusade) {
+				throw new Error('You can only choose one game version');
+			}
+
+			let version = 'retail';
+			if (program.classic) {
+				version = 'classic';
+			} else if (program.burningcrusade) {
+				version = 'bc';
+			}
+
+			let data = await fetchRealm(region, realm, version);
 
 			if (!data) {
 				throw new Error('That realm doesn’t exist');
