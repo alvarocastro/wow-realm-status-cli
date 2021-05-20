@@ -20,21 +20,22 @@ program
 	.option('-bc, --burningcrusade', 'Use for Burning Crusade realms', false)
 	.arguments('<region> <realm>')
 	.action(async (region, realm) => {
+		const options = program.opts();
 		let spinner;
 
-		if (!program.simple) {
+		if (!options.simple) {
 			spinner = ora('Checking').start();
 		}
 
 		try {
-			if (program.classic && program.burningcrusade) {
+			if (options.classic && options.burningcrusade) {
 				throw new Error('You can only choose one game version');
 			}
 
 			let version = 'retail';
-			if (program.classic) {
+			if (options.classic) {
 				version = 'classic';
-			} else if (program.burningcrusade) {
+			} else if (options.burningcrusade) {
 				version = 'bc';
 			}
 
@@ -46,23 +47,23 @@ program
 
 			data = normalizeRealm(data);
 
-			const fields = program.fields.split(',');
-			if (program.fields && fields.length > 0) {
+			const fields = options.fields.split(',');
+			if (options.fields && fields.length > 0) {
 				data = filterFields(data, fields);
 			}
 
-			if (!program.simple) {
+			if (!options.simple) {
 				spinner.stop();
 			}
 
-			if (program.json) {
+			if (options.json) {
 				outputAsJson(data);
 			} else {
 				outputAsHuman(data);
 			}
 		} catch (error) {
 			spinner.stop();
-			if (program.json) {
+			if (options.json) {
 				console.error(JSON.stringify({error: error.message}));
 			} else {
 				console.error(`DIE INSECT! ${error.message}!`);
