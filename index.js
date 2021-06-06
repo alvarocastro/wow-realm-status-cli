@@ -14,9 +14,9 @@ const normalizeRealm = function (data) {
 const filterFields = function (data, fields = []) {
 	const out = {};
 
-	fields.forEach(field => {
+	for (const field of fields) {
 		out[field] = data[field];
-	});
+	}
 
 	return out;
 };
